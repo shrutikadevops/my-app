@@ -35,7 +35,7 @@ pipeline {
                 steps{
                     sh '''
                     aws s3 cp s3://shrutika-2001/Q2-2026/index.html .
-                    docker cp index.html server-1:/usr/local/apache2/htdocs
+                    docker cp index.html server-2:/usr/local/apache2/htdocs
                     '''
                 }
                 }
